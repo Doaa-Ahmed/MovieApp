@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="Gold">#FFD700</color>
+    <color name="white">#FFFFFF</color>
+    <color name="li_gray">#ddddf1</color>
+    <color name="dark_gray">#656584</color>
+    <color name="Deep_Purple">#673AB7</color>
+    <color name="lite_purple">#EDE7F6</color>
+    <color name="lite_purple_2">#D1C4E9</color>
+    <color name="lite_purple_3">#B39DDB</color>
+    <color name="black">#000000</color>
+    <color name="lite_purple_4">#9575CD</color>
+    <color name="purple">#B388FF</color>
+    <color name="h_purpulr">#6A1B9A</color>
+    <color name="h_purpule_2">#9C27B0</color>
+    <color name="h_purpule_3">#7B1FA2</color>
+    <color name="word_color">#880E4F</color>
+</resources>

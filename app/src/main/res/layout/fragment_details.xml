@@ -1,0 +1,121 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="550dp"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@color/lite_purple_2"
+    tools:context=".DetailsActivity"
+    tools:showIn="@layout/activity_details">
+
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent" android:layout_height="match_parent"
+        android:background="@color/lite_purple_2">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/container">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/posterthumb"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Large Text"
+                android:id="@+id/title"
+                android:textStyle="bold"
+                android:textColor="@color/purple"
+                android:textSize="40dp"
+                android:layout_below="@+id/posterthumb"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Small Text"
+                android:id="@+id/plot"
+                android:textColor="@color/Deep_Purple"
+                android:layout_below="@+id/title"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Small Text"
+                android:textColor="@color/Deep_Purple"
+                android:textAllCaps="true"
+                android:id="@+id/rate"
+                android:layout_marginTop="30dp"
+                android:layout_below="@+id/plot"
+                android:layout_toRightOf="@+id/favourite"
+                android:layout_toEndOf="@+id/favourite" />
+
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:background="@color/lite_purple_2"
+                android:id="@+id/info_list"
+                android:layout_below="@+id/date"
+                android:layout_marginTop="43dp">
+
+            </android.support.v7.widget.RecyclerView>
+
+            <TextView
+                android:text="Film Rate: "
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView2"
+                android:layout_above="@+id/date"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Small Text"
+                android:textColor="@color/Deep_Purple"
+                android:id="@+id/date"
+                android:paddingRight="30dp"
+                android:layout_marginTop="19dp"
+                android:layout_below="@+id/rate"
+                />
+
+            <TextView
+                android:text="Release Date: "
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView3"
+                android:layout_below="@+id/textView2"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/lite_purple_2"
+                android:textColor="@color/Deep_Purple"
+                android:text="Favourite"
+                android:textStyle="bold"
+                android:id="@+id/favourite"
+                android:layout_below="@+id/date"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>
